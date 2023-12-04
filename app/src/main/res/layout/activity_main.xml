@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="LOGIN"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:textColor="@color/Gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:srcCompat="@drawable/logo_icon" />
+
+    <!--========== Username ==========   -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_marginTop="30dp"
+        android:layout_width="286dp"
+        android:layout_height="44dp"
+        android:background="@drawable/custom_rounded_box"
+        android:hint="Username"
+        app:boxBackgroundMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/username_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toTopOf="@id/username"
+        android:layout_margin="8dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Email2"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:hint="Email"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toEndOf="@id/username_icon"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    />
+
+
+    <!--    Password    -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_marginTop="30dp"
+        android:layout_width="286dp"
+        android:layout_height="44dp"
+        android:background="@drawable/custom_rounded_box"
+
+        android:hint="Password"
+        app:boxBackgroundMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+
+        >
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/pass_icon"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password"
+        android:layout_margin="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password_2"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:hint="Password"
+        android:background="@null"
+        android:layout_marginStart="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toEndOf="@id/password_icon"
+        app:layout_constraintTop_toTopOf="@+id/password" />
+    />
+
+    <!-- Deskripsi -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/description"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/password"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Remember Me"
+            android:textSize="10sp"
+            app:layout_constraintTop_toTopOf="@id/description"
+            app:layout_constraintStart_toStartOf="@id/description"
+            android:layout_marginTop="10dp"
+            app:buttonTint="@color/White_1"
+            android:textColor="@color/White_1"
+            />
+
+        <TextView
+            android:id="@+id/PortalTo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textColor="@color/Gold"
+            app:layout_constraintEnd_toEndOf="@id/description"
+            app:layout_constraintTop_toTopOf="@id/description"
+            android:layout_marginTop="15dp"
+            android:textSize="10sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--    Icon    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/icon_group"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintStart_toStartOf="@id/description"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="43dp">
+        <ImageView
+            android:id="@+id/insta_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/insta_icon"
+            app:layout_constraintTop_toTopOf="@id/icon_group"
+            app:layout_constraintStart_toStartOf="@id/icon_group"
+            />
+        <ImageView
+            android:id="@+id/google_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/google_icon"
+            app:layout_constraintTop_toTopOf="@id/icon_group"
+            app:layout_constraintStart_toEndOf="@id/insta_icon"
+            android:layout_marginStart="45dp"
+
+            />
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/facebook_icon"
+            app:layout_constraintTop_toTopOf="@id/icon_group"
+            app:layout_constraintStart_toEndOf="@id/google_icon"
+            android:layout_marginStart="45dp"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    Login Button    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Button"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icon_group"
+        app:layout_constraintStart_toStartOf="@id/description"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            app:layout_constraintStart_toStartOf="@id/Button"
+            app:layout_constraintTop_toTopOf="@id/Button"
+            android:backgroundTint="@color/Gold"
+            app:layout_constraintCircleRadius="10dp"
+            android:textColor="@color/White_1"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    progressBar    -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <!--    Register portal    -->
+
+    <TextView
+        android:id="@+id/RegisterPortal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Member?"
+        app:layout_constraintTop_toBottomOf="@id/Button"
+        app:layout_constraintStart_toStartOf="@id/Button"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:textColor="@color/White_1"
+        />
+    <TextView
+        android:id="@+id/RegisterPortal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@id/Button"
+        app:layout_constraintStart_toEndOf="@id/RegisterPortal1"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/Gold"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

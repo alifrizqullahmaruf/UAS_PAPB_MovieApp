@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "952251686916",
+    "project_id": "uasapp-3894b",
+    "storage_bucket": "uasapp-3894b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952251686916:android:1eb1637a946049b0cbd551",
+        "android_client_info": {
+          "package_name": "com.example.budgetbuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDFcrkAdCLo5QvPIw50FTgep5SguIKLv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952251686916:android:70a7a3c30bda12b7cbd551",
+        "android_client_info": {
+          "package_name": "com.example.uas_papb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDFcrkAdCLo5QvPIw50FTgep5SguIKLv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
