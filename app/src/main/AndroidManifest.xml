@@ -15,6 +15,9 @@
         android:theme="@style/Theme.UAS_PAPB"
         tools:targetApi="31">
         <activity
+            android:name=".HalamanUtama"
+            android:exported="false" />
+        <activity
             android:name=".UserActivity"
             android:exported="false" />
         <activity
